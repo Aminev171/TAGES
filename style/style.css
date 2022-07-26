@@ -1,0 +1,603 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: 1;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+a{
+    text-decoration: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+/*===================================================Сброс стилей==============================================*/
+.wrap {
+    
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.content{
+
+}
+/*==================================Шапка Сайта================================================================*/
+.header__burger{
+    display: none;
+}
+
+.header__burger-menu {
+    padding-top: 40px;
+    display: none;
+}
+.header__burger-telephone-button {
+    width: 170px;
+    height: 40px;
+    background: #F65700;
+    border-radius: 8px;
+    border: none;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-size: 20px;
+    line-height: 15px;
+    color: #FFFFFF;
+    margin: 20px 0 0 20px;
+}
+.header__burger-telephone-button:hover{
+    cursor: pointer;
+    background-color: #f65600c0;
+    transition: all .3s ease;
+}
+
+.header__burger-a{
+    color: #F65700;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 24px;
+    margin: 50px 0 0 20px;
+    padding: 0px 0 26px 0;
+}
+.header__burger-a:hover{
+    cursor: pointer;
+    color: #f65600c0;
+    transition: all .3s ease;
+}
+.header {
+   padding: 20px 0 0 0;
+   display: flex;
+   justify-content: space-between;
+}
+.header__menu{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    padding-bottom: 14px;
+    padding-top: 20px;
+}
+.logo {
+    padding: 18px 0 0 27px;
+}
+.logo__img {
+
+}
+.logo__img:hover{
+    cursor: pointer;
+}
+.contacts {
+}
+.number {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 63px;
+    
+}
+
+.number__telephone-number{
+    background: url('/img/svg/phone.svg')left no-repeat;
+    padding-left: 27px;
+    padding-right: 16px;
+    width: 138px;
+    height: 24px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+}
+.number__telephone-button {
+    width: 179px;
+    height: 48px;
+    background: #F65700;
+    border-radius: 8px;
+    border: none;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    
+}
+.number__telephone-button:hover{
+    cursor: pointer;
+    background-color: #f65600c0;
+    transition: all .3s ease;
+}
+
+/*=========================================breadcrumbs=========================================================*/
+.breadcrumb {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #828282;
+    margin-left: 28px;
+}
+.breadcrumb__list {
+     
+}
+.breadcrumb__list-item {
+    display: inline-block;
+    padding-bottom: 8px;
+    
+}
+
+.breadcrumb__list-item_slash{
+    display: inline-block;
+    padding-right: 7px;
+    padding-bottom: 8px;
+    padding-left: 4px;
+}
+.breadcrumb__list-item:hover {
+    display: inline-block;
+    color: #F65700;
+    cursor: pointer;
+}
+/*==================================Заголовок================================================================*/
+.title {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #333333;
+    margin-left: 28px;
+}
+.title__title-smart {
+    margin-bottom: 10px;
+}
+/*==================================Скидка================================================================*/
+.sale{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 66px;
+    height: 28px;
+    left: 8px;
+    top: -7px;
+    background: #EB5757;
+    border-radius: 8px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    position: absolute;
+    z-index:2;
+}
+
+
+.installment{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    background: #27AE60;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 8px;
+    max-width: 86px;
+    position: absolute;
+    bottom: 95%;
+    left: 3%;
+    z-index: 2;
+}
+
+/*==================================Карточка телефона================================================================*/
+.content-wrap-container {
+}
+.content-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1136px;
+}
+.content-wrap__list {
+    max-width: 251px;
+    border: 1px solid #f2f2f2;
+    border-radius: 8px;
+    margin: 30px 0px 0px 28px;
+    height: 426px;
+    
+    
+}
+.card{
+    margin-top: 15px;
+    padding: 0px 15px;
+    flex-basis: 24%;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+}
+.card-image {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 225px;
+}
+.card-image__img {
+    width: 100%;
+    height: 225px;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    
+}
+.card-info {
+    display: flex;
+    flex-direction: column;
+    
+}
+.card-info__phone-title {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+    padding: 16px 0px 0px 0px;
+    height: 40px;
+    cursor: pointer;
+}
+.card-info__phone-title:hover{
+    color: #F65700;
+}
+.price__phone-price {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+    color: #333333;
+    padding: 28px 0px 15px 0;
+}
+.price__phone--old-price{
+    position: relative;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    color: #828282;
+    padding: 10px 8px 0px 0px;
+}
+.price__phone--old-price:before {
+    
+    border: 1px solid #EB5757;
+    position: absolute;
+    content: "";
+    width: 77%;
+    top: 65%; 
+}
+.price{
+    display: flex;
+    align-items: center;
+}
+
+.card-info__phone-description {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: #828282;
+}
+.card__phone-span {
+    color: black;
+}
+
+/*==================================Модальное окно================================================================*/
+body{
+    position: relative;
+}
+.overlay {
+    display: none;
+    position:absolute;
+    width:100%;
+    height:100%;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.window{
+    position: relative;
+    z-index: 101;
+}
+.modal-window {
+    display: none;
+    
+}
+.modal-window__item {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 492px;
+    max-height: 312px;
+    background: #FFFFFF;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+}
+.modal-head{
+    display: flex;
+    justify-content: space-between;
+}
+.modal-head__title {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333333;
+    padding: 32px 0px 19px 32px;
+    
+}
+.modal-head-image__exit-modal{
+    padding: 36px 31px 0px 0px;
+    
+}
+.modal-head-image__img{
+    cursor: pointer;
+}
+.modal-window__input {
+    width: 422px;
+    height: 53px;
+    margin: 5px;
+    background: #FFFFFF;
+    border: 1px solid #ECEFF1;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.modal-window__input::placeholder{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #828282;
+    padding-left: 14px;
+}
+.modal-window__btn{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    background: #F65700;
+    border-radius: 8px;
+    border: none;
+    width: 132px;
+    height: 48px;
+    cursor: pointer;
+
+}
+.modal-window__btn:hover{
+    background-color: #f65600c0;
+}
+.modal-data{
+    padding-left: 27px;
+
+}
+.btn{
+    display: flex;
+    justify-content: end;
+    padding: 14px 32px 10px 0px;
+}
+.toast{
+    display: none;
+    background-color: red;
+}
+.toastjs{
+
+}
+
+
+/*==================================Адаптив================================================================*/
+@media (max-width: 1140px){
+    .content-wrap {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 1068px){
+    .content-wrap__list {
+        padding: 0 0 0 0px;
+        max-width: 240px;
+    }
+}
+@media (max-width: 984px){
+    .content-wrap {
+        max-width: 848px;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 826px){
+    .number {
+        padding-right: 0px; 
+    }
+    .content-wrap__list {
+        margin: 30px 0px 0px 0px;
+    }
+}
+@media (max-width: 768px){
+    .header__burger{
+        display: block;
+        position: absolute;
+        top: 45px;
+        right: 15px;
+        width: 30px;
+        height: 20px;
+        z-index: 52;
+    }
+    .header__burger span{
+        position: absolute;
+        background-color: #F65700;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+    }
+    .header__burger::before,
+    .header__burger::after{
+        content: '';
+        background-color: #F65700;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+    }
+    .header__burger::before{
+        top: 0;
+    }
+    .header__burger::after{
+        bottom: 0;
+        transition: all 0.3s ease 0s;
+    }
+    .active::before{
+        transform: rotate(45deg);
+        top: 9px;
+    }
+    .active::after{
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+    .active span {
+        transform: scale(0);
+        transition: all 0.3s ease 0s;
+    }
+    .contacts {
+        display: none;
+    }
+    .logo {
+        margin: -10px 15px 0px 0px;
+    }
+    
+    .header {
+        margin-bottom: 0px;
+        padding: 20px 0 40px 0;
+    }
+    .header::before{
+        z-index: 50;
+    }
+    .header__menu {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        z-index: 51;
+        margin-top: 0px;
+        padding: 0px 0px 0px 10px;
+        transition: all 0.3s ease 0s;
+        overflow: auto;
+    }
+    .header__menu.active{
+        top: 0;
+    }
+    .header__burger-menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 10px;
+    }
+    .breadcrumb{
+        display: none;
+    }
+    .logo{
+        position: relative;
+        z-index: 52;
+        margin: 0 0 0 20px;
+    }
+    body.lock{
+        overflow: hidden;
+    }
+}
+
+
+
+
+
+
+
+
+
+
